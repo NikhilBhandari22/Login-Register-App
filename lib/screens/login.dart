@@ -13,19 +13,13 @@ class LoginPAge extends StatefulWidget {
 }
 
 class _LoginPAgeState extends State<LoginPAge> {
-
-    //----------------textfield Controller----------------
-
+  //----------------textfield Controller----------------
 
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
 
-
   // ------------------Firebase Auth instance---------------
   final FirebaseAuth _auth = FirebaseAuth.instance;
-
-
-
 
   // --------------------loginUser function-------------------
 
@@ -51,8 +45,6 @@ class _LoginPAgeState extends State<LoginPAge> {
       ).showSnackBar(SnackBar(content: Text("Login failed: $e")));
     }
   }
-
-
 
   // ---------------------UI of Homepage------------------
   @override
@@ -89,7 +81,11 @@ class _LoginPAgeState extends State<LoginPAge> {
                         controller: _emailController,
                         decoration: InputDecoration(
                           hintText: 'Enter Username',
-                          prefixIcon: Icon(Icons.email_outlined),
+                          prefixIcon: Icon(
+                            Icons.email_outlined,
+                            color: Colors.deepPurple,
+                          ),
+                          hintStyle: TextStyle(color: Colors.deepPurple),
                           filled: true,
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(20),
@@ -101,7 +97,11 @@ class _LoginPAgeState extends State<LoginPAge> {
                         controller: _passwordController,
                         decoration: InputDecoration(
                           hintText: 'Enter Password',
-                          prefixIcon: Icon(Icons.password_outlined),
+                          prefixIcon: Icon(
+                            Icons.password_outlined,
+                            color: Colors.deepPurple,
+                          ),
+                          hintStyle: TextStyle(color: Colors.deepPurple),
                           filled: true,
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(20),
