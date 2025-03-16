@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "346900635075",
+    "project_id": "signauth-2dbea",
+    "storage_bucket": "signauth-2dbea.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346900635075:android:e7adec72f487ea14233176",
+        "android_client_info": {
+          "package_name": "com.example.myapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBsXb6GbZs9Ro72WW3bGCcEGmxc_zJBd8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
