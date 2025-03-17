@@ -55,7 +55,7 @@ class _LoginPAgeState extends State<LoginPAge> {
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
-            color: Colors.deepPurple,
+            color:  const Color.fromARGB(255, 33, 37, 243),
           ),
           height: 500,
           width: 300,
@@ -83,9 +83,9 @@ class _LoginPAgeState extends State<LoginPAge> {
                           hintText: 'Enter Username',
                           prefixIcon: Icon(
                             Icons.email_outlined,
-                            color: Colors.deepPurple,
+                            color:  const Color.fromARGB(255, 33, 37, 243),
                           ),
-                          hintStyle: TextStyle(color: Colors.deepPurple),
+                          hintStyle: TextStyle(color:  const Color.fromARGB(255, 33, 37, 243),),
                           filled: true,
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(20),
@@ -99,9 +99,9 @@ class _LoginPAgeState extends State<LoginPAge> {
                           hintText: 'Enter Password',
                           prefixIcon: Icon(
                             Icons.password_outlined,
-                            color: Colors.deepPurple,
+                           color:  const Color.fromARGB(255, 33, 37, 243),
                           ),
-                          hintStyle: TextStyle(color: Colors.deepPurple),
+                          hintStyle: TextStyle(color:  const Color.fromARGB(255, 33, 37, 243),),
                           filled: true,
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(20),
@@ -109,9 +109,10 @@ class _LoginPAgeState extends State<LoginPAge> {
                         ),
                         obscureText: true,
                       ),
-                      SizedBox(height: 10),
+                      SizedBox(height: 20),
                       SizedBox(
                         width: 400,
+                        height: 50,
                         child: ElevatedButton(
                           onPressed: _loginUser,
                           child: Text('Login'),

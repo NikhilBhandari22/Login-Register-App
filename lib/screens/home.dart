@@ -16,11 +16,14 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Color.fromARGB(255, 33, 37, 243),
         centerTitle: true,
         title: const Text(
           "Lists Of Users",
-          style: TextStyle(color: Colors.white, fontSize: 30),
+          style: TextStyle(
+            color: Color.fromARGB(255, 33, 37, 243),
+            fontSize: 30,
+          ),
         ),
       ),
       body: Padding(
@@ -32,15 +35,15 @@ class _HomePageState extends State<HomePage> {
             if (snapshot.connectionState == ConnectionState.waiting) {
               return const Center(child: CircularProgressIndicator());
             }
-      
+
             // 2) Handle No Data
             if (!snapshot.hasData || snapshot.data!.docs.isEmpty) {
               return const Center(child: Text("No users found"));
             }
-      
+
             // 3) Build DataTable
             final userDocs = snapshot.data!.docs;
-      
+
             return SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Card(
@@ -88,7 +91,7 @@ class _HomePageState extends State<HomePage> {
                         final int index = entry.key;
                         final doc = entry.value;
                         final data = doc.data() as Map<String, dynamic>;
-      
+
                         // Alternate row colors: one color for even, another for odd rows.
                         return DataRow(
                           color: WidgetStateProperty.resolveWith<Color>((
