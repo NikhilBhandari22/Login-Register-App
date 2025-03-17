@@ -20,10 +20,7 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
         title: const Text(
           "Lists Of Users",
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 30,
-          ),
+          style: TextStyle(color: Colors.white, fontSize: 30),
         ),
       ),
       body: Padding(
@@ -131,7 +128,7 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
-        backgroundColor: Color.fromARGB(255, 94, 96, 232),
+        backgroundColor: Theme.of(context).primaryColor,
         onPressed: () {
           // Navigate to the RegisterPage
           Navigator.of(

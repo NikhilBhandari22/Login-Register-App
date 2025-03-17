@@ -63,7 +63,7 @@ class _RegisterPageState extends State<RegisterPage> {
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
-             color:  const Color.fromARGB(255, 33, 37, 243),
+            color: Theme.of(context).primaryColor,
           ),
           height: 500,
           width: 300,
@@ -88,10 +88,12 @@ class _RegisterPageState extends State<RegisterPage> {
                         controller: _usernameController,
                         decoration: InputDecoration(
                           hintText: 'Enter Username',
-                          hintStyle: TextStyle(color:  const Color.fromARGB(255, 33, 37, 243),),
+                          hintStyle: TextStyle(
+                            color: Theme.of(context).primaryColor,
+                          ),
                           prefixIcon: Icon(
                             Icons.verified_user,
-                           color:  const Color.fromARGB(255, 33, 37, 243),
+                            color: Theme.of(context).primaryColor,
                           ),
                           filled: true,
                           border: OutlineInputBorder(
@@ -104,10 +106,12 @@ class _RegisterPageState extends State<RegisterPage> {
                         controller: _emailController,
                         decoration: InputDecoration(
                           hintText: 'Enter Email',
-                          hintStyle: TextStyle(color:  const Color.fromARGB(255, 33, 37, 243),),
+                          hintStyle: TextStyle(
+                            color: Theme.of(context).primaryColor,
+                          ),
                           prefixIcon: Icon(
                             Icons.email_outlined,
-                           color:  const Color.fromARGB(255, 33, 37, 243),
+                            color: Theme.of(context).primaryColor,
                           ),
                           filled: true,
                           border: OutlineInputBorder(
@@ -120,10 +124,12 @@ class _RegisterPageState extends State<RegisterPage> {
                         controller: _passwordController,
                         decoration: InputDecoration(
                           hintText: ' Enter Password',
-                          hintStyle: TextStyle(color:  const Color.fromARGB(255, 33, 37, 243),),
+                          hintStyle: TextStyle(
+                            color: Theme.of(context).primaryColor,
+                          ),
                           prefixIcon: Icon(
                             Icons.lock_clock_outlined,
-                           color:  const Color.fromARGB(255, 33, 37, 243),
+                            color: Theme.of(context).primaryColor,
                           ),
 
                           filled: true,

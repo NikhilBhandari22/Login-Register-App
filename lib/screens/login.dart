@@ -55,7 +55,7 @@ class _LoginPAgeState extends State<LoginPAge> {
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
-            color:  const Color.fromARGB(255, 33, 37, 243),
+            color:Theme.of(context).primaryColor,
           ),
           height: 500,
           width: 300,
@@ -83,9 +83,9 @@ class _LoginPAgeState extends State<LoginPAge> {
                           hintText: 'Enter Username',
                           prefixIcon: Icon(
                             Icons.email_outlined,
-                            color:  const Color.fromARGB(255, 33, 37, 243),
+                            color:  Theme.of(context).primaryColor,
                           ),
-                          hintStyle: TextStyle(color:  const Color.fromARGB(255, 33, 37, 243),),
+                          hintStyle: TextStyle(color:  Theme.of(context).primaryColor,),
                           filled: true,
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(20),
@@ -99,9 +99,9 @@ class _LoginPAgeState extends State<LoginPAge> {
                           hintText: 'Enter Password',
                           prefixIcon: Icon(
                             Icons.password_outlined,
-                           color:  const Color.fromARGB(255, 33, 37, 243),
+                           color:  Theme.of(context).primaryColor,
                           ),
-                          hintStyle: TextStyle(color:  const Color.fromARGB(255, 33, 37, 243),),
+                          hintStyle: TextStyle(color:Theme.of(context).primaryColor,),
                           filled: true,
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(20),
